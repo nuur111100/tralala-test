@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tralala</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+        }
+        body{
+            
+            background-image: url(https://s3.amazonaws.com/media.eremedia.com/uploads/2015/12/21130345/shutterstock_223963798-700x467.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /*top left side style starts here*/
+        .navbar{
+            position: fixed;
+            display: flex;
+            width: 100%;
+            height: 50px;
+            opacity: 0.8;
+            background-color:#45aaf2;
+        }
+        .menu-left{
+            width: 35%;
+            padding: 10px;
+             height: auto;
+            float: left;
+            margin: 0;  
+        }
+        .menu-left{
+            float: left;
+        }
+        ul.menu-left  li {
+            display: inline;
+            background-color: #2d98da;
+            border-radius: 3px;
+            font-size: 22px;
+            padding: 5px;
+            margin-left: 5px;
+            line-height: 35px;
+            cursor: pointer;
+        }
+
+        ul.menu-left  li:hover{
+            opacity: 0.7;
+        }
+        .menu-left i{
+            color: white;
+            font-size: 22px;
+            background-color: #2d98da;
+            border-radius: 3px;
+            padding: 5px;
+            padding-left: 5px;       
+        }
+        .menu-left {
+            font-size: 22px;
+        }
+        input[type=text]{
+            font-size: 22px;
+            background-color: #2d98da;
+       
+            outline: none;
+            border: none;
+            border-radius: 3px;
+        }
+  
+
+        input[type=text]:focus{
+            background-color: white;
+            outline: none;
+            border: none;
+        }
+        
+        /*top left side style ends here*/
+
+        /*middle title style starts here*/
+
+        .Ttile-middle{
+            width: 35%;
+            font-size: 22px;
+            font-family: Trebuchet;
+            line-height: 50px;
+          
+        }
+        .Ttile-middle h1{
+            text-align: center;
+            color: white;
+            font-size: 22px;
+        }
+         /*middle title style ends here*/
+
+          /*right icons style starts here*/
+        .right-icons{
+            width: 28%;
+            padding-right: 10px;
+            padding: 5px;
+        }
+        .right-icons i{
+           font-size: 22px;
+           line-height: 40px;
+           margin-right: 15px;
+           padding: 2px;
+           color: white;
+           background-color: #2d98da;
+           float: right;
+           cursor: pointer;
+        }
+        .right-icons i:hover{
+            opacity: 0.7;
+        }
+         /*right icons style ends here*/
+
+         /*bottom navbar style starts here*/
+        .bottom-navbar{
+            position: fixed;
+            margin-top: 50px;
+            width: 100%;
+            background-color: #74b9ff;
+            height: 40px;
+            opacity: 0.7;
+        }
+        
+        .left{
+            float: left;
+            width: 48%;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 15px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .right{
+            float: right;
+            width: 48%;
+          
+            height: 40px;
+            line-height: 40px;
+            padding-left: 15px;
+            font-size: 18px;
+            color: white;
+        }
+        .right i{
+            float: right;
+            line-height: 40px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .right i:hover{
+            opacity: 0.7;
+        }
+/*top styling ends here*/
+.Container{
+            display: inline-flex;
+            margin-top: 90px;
+            padding: 0 10px;
+            }
+            .ToDo {
+                padding: 10px;
+                margin: 5px;
+                background-color: #D3D3D3;
+                width: 210px;
+                height: 190px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                border-radius: 5px;
+            }
+
+            .Doing {
+                padding: 10px;
+                margin: 5px;
+                background-color: #D3D3D3;
+                width: 210px;
+                border-radius: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+            }
+            textarea{
+                border-radius: 5px;
+                resize: none;
+                padding: 7px;
+                outline: none;
+            }
+            input[type=submit]{
+                background-color: #3a5311;
+                color: white;
+                width: 100px;
+                padding: 10px;
+                font-size: 18px;
+                border-radius: 5px;
+                cursor: pointer;
+                outline: none;
+                border: none;
+            }
+            input[type=submit]:hover{
+                opacity: 0.7;
+            }
+            #cross-button{
+                font-size: 36px;
+                cursor: pointer;
+                margin-bottom: 20px;
+                margin-top: 5px;
+                padding: 5px;
+             
+            }
+            #cross-button:hover{
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+            .Testing {
+                padding: 10px;
+                margin: 5px;
+                background-color: #D3D3D3;
+                width: 210px;
+                height: 90px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                border-radius: 5px;
+            }
+
+            .Deploying {
+                padding: 10px;
+                margin: 5px;
+                background-color: #D3D3D3;
+                width: 210px;
+                height: 90px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                border-radius: 5px;
+            }
+
+            .Done {
+                padding: 10px;
+                margin: 5px;
+                background-color: #D3D3D3;
+                width: 210px;
+                height: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                border-radius: 5px;
+            }
+
+            .Add_another_list {
+                padding: 10px;
+                margin: 5px;
+                background-color: #D3D3D3;
+                width: 210px;
+                height: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                border-radius: 5px;
+            }
+
+            .lastbox {
+                padding: 10px;
+                margin: 5px;
+                background-color: #D3D3D3;
+                width: 210px;
+                height: 150px;
+                border-radius: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                border-radius: 5px;
+            }
+
+            H5{
+                background-color: white;
+                color: #A9A9A9;
+                padding: 10px;
+                margin-top: 8px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+            h5:hover{
+                opacity: 0.7;
+                cursor: pointer;
+            }
+            h2{
+                float: right;    
+                margin-top: -10px;
+            }
+
+            h2:hover{
+                cursor: pointer;
+            }
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="menu-left">
+           <li> <a href=""><i class="fas fa-home"></a></i></li>
+           
+            <li><i class="fas fa-th">&nbsp; Boards</i></li>
+            <li class="textbox"><input type="text"></li>
+        </ul>
+        <div class="Ttile-middle">
+            <h1>Tralala</h1>
+        </div>
+        <div class="right-icons">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-plus"></i>
+        </div>
+    </div>
+    <div class="bottom-navbar">
+        <div class="left">
+            <h4>Frontend Training</h4>
+        </div>
+        <div class="right">
+            <i class="fas fa-ellipsis-v"> Show Menu</i>
+
+        </div>
+    </div>
+    <div class="Container">
+        <div class="ToDo">To Do  
+            <h2>&#46;&#46;&#46;</h2>
+            <h5>Learn HTML</h5>
+            <h5>Learn CSS</h5>
+            <h5>Learn JavaScript</h5>
+            &#43; Add another Card
+        </div>
+
+        <div class="Doing">Doing
+            <h2>&#46;&#46;&#46;</h2>
+            <h5>Prepare resume</h5>
+            <textarea id="txtarea" rows="4" cols="25" placeholder="Enter a title for this card..."></textarea>
+            <input type="submit" value="Add Card">
+            <i class="fas fa-times" id="cross-button"></i>
+        </div>
+
+        <div class="Testing">Testing/Verifying
+            <h2>&#46;&#46;&#46;</h2>
+            <h5>Twitter app Frontend</h5>
+            &#43; Add another Card
+        </div>
+        
+        <div class="Deploying">Deploying
+            <h2>&#46;&#46;&#46;</h2>
+            <h5>Twitter app Frontend</h5>
+            &#43; Add another Card
+        </div>
+
+        <div class="Done">Done 
+            <h2>&#46;&#46;&#46;</h2><br>
+            &#43; Add Card
+        </div>
+        
+        <div class="Add_another_list"> &#43; Add another list</div>
+       
+        <div class="lastbox">
+            <textarea id="txtarea" rows="4" cols="25" placeholder="Enter list title....."></textarea>
+            <input type="submit" value="Add List">
+            <i class="fas fa-times" id="cross-button"></i>
+        </div>
+    </div>
+</body>
+</html>
